@@ -483,8 +483,14 @@
                     <!-- Success/Error Messages -->
                     <div id="form-message" class="form-message" style="display: none;"></div>
                     
-                    <form class="contact-form" action="send-email.php" method="POST" id="contactForm">
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
                         <h3>Book an Appointment</h3>
+                        
+                        <!-- Hidden field for spam protection -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
                         
                         <div class="form-group">
                             <label for="name">Full Name *</label>
