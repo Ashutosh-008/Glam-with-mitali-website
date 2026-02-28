@@ -130,7 +130,7 @@ const ServicesSection = () => {
           >
             Our Services
           </h2>
-          <p className="text-lg text-[#2C2C2C]/70 max-w-2xl mx-auto">
+          <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
             Tailored makeup packages for every special occasion in your life
           </p>
         </div>
@@ -144,7 +144,7 @@ const ServicesSection = () => {
                 <TabsTrigger
                   key={service.id}
                   value={service.id}
-                  className="data-[state=active]:bg-[#D4AF37] data-[state=active]:text-white bg-[#FFF8F0] text-[#2C2C2C] px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#D4AF37]/20"
+                  className="data-[state=active]:bg-[#8B7355] data-[state=active]:text-white bg-[#FAF7F2] text-[#2C2C2C] px-6 py-3 rounded-md transition-all duration-300 hover:bg-[#8B7355]/20"
                 >
                   <Icon className="w-4 h-4 mr-2" />
                   {service.title}
@@ -159,15 +159,15 @@ const ServicesSection = () => {
                 {service.packages.map((pkg, index) => (
                   <Card
                     key={index}
-                    className={`relative overflow-hidden border-2 transition-all duration-300 hover:shadow-xl hover:scale-105 ${
+                    className={`relative overflow-hidden border-2 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${
                       pkg.popular
-                        ? 'border-[#D4AF37] shadow-lg'
-                        : 'border-[#2C2C2C]/10 hover:border-[#D4AF37]'
+                        ? 'border-[#8B7355] shadow-md'
+                        : 'border-[#E5E5E5] hover:border-[#8B7355]'
                     }`}
                   >
                     {pkg.popular && (
                       <div className="absolute top-4 right-4">
-                        <Badge className="bg-[#D4AF37] text-white">Most Popular</Badge>
+                        <Badge className="bg-[#8B7355] text-white hover:bg-[#6B5943]">Most Popular</Badge>
                       </div>
                     )}
                     <CardHeader>
@@ -177,15 +177,15 @@ const ServicesSection = () => {
                       >
                         {pkg.name}
                       </CardTitle>
-                      <CardDescription className="text-3xl font-bold text-[#D4AF37] mt-2">
+                      <CardDescription className="text-3xl font-bold text-[#8B7355] mt-2">
                         {pkg.price}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-3">
                         {pkg.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start text-[#2C2C2C]/80">
-                            <span className="text-[#D4AF37] mr-2">✓</span>
+                          <li key={idx} className="flex items-start text-[#5A5A5A]">
+                            <span className="text-[#8B7355] mr-2">✓</span>
                             <span>{feature}</span>
                           </li>
                         ))}
@@ -200,7 +200,7 @@ const ServicesSection = () => {
 
         {/* Additional Info */}
         <div className="mt-16 text-center">
-          <p className="text-[#2C2C2C]/70 italic">
+          <p className="text-[#6B6B6B] italic">
             All packages can be customized to your specific needs. Contact us for detailed pricing and availability.
           </p>
         </div>
