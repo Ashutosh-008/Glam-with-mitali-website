@@ -14,43 +14,50 @@ A beautiful, static HTML/CSS landing page for professional makeup artist Mitali 
 2. Double-click `index.html` to view in your browser
 3. Or upload all files to any web hosting service
 
-## 📧 Setting Up Email Form
+## 📧 Email Setup - Simple PHP Solution
 
-The contact form currently uses Formspree (free service) to send emails directly to your inbox.
+The contact form uses a simple PHP script to send emails **directly to mitaliverma8853@gmail.com** - no third-party services needed!
 
-### **Option 1: Formspree (Recommended - Easy & Free)**
+### **How It Works:**
 
-1. Go to [https://formspree.io](https://formspree.io)
-2. Sign up for a free account
-3. Create a new form
-4. Copy your form endpoint (looks like: `https://formspree.io/f/xyzabc123`)
-5. In `index.html`, find this line (around line 610):
-   ```html
-   <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
-6. Replace `YOUR_FORM_ID` with your actual Formspree form ID
+1. User fills the contact form
+2. Form submits to `send-email.php`
+3. PHP sends email to: **mitaliverma8853@gmail.com**
+4. User sees success message
 
-**How it works:**
-- When someone fills the form, Formspree sends the details to your email (mitaliverma8853@gmail.com)
-- You'll receive notifications for every submission
-- Free tier includes 50 submissions/month
+### **Requirements:**
 
-### **Option 2: Direct Email (mailto:)**
+✅ Web hosting with PHP support (most hosts have this)
+✅ That's it! No signup, no API keys, no third-party services
 
-If you prefer a simpler approach:
+### **Works On:**
 
-1. In `index.html`, replace the form's action attribute with:
-   ```html
-   <form class="contact-form" action="mailto:mitaliverma8853@gmail.com" method="POST" enctype="text/plain">
-   ```
+- **Shared Hosting** (Hostinger, Bluehost, GoDaddy, etc.) ✅
+- **cPanel Hosting** ✅
+- **Most Web Hosts** ✅
 
-**Note:** This opens the user's email client. Less convenient but requires no setup.
+### **Does NOT Work On:**
 
-### **Option 3: Google Forms**
+- ❌ GitHub Pages (no PHP support)
+- ❌ Netlify/Vercel (static only, but they have form handling features)
 
-1. Create a Google Form with the same fields
-2. Get the form's embed link or action URL
-3. Replace the form action in `index.html`
+### **For Netlify/Vercel (Alternative):**
+
+If using Netlify or Vercel, simply add this to your form tag:
+```html
+<form ... data-netlify="true" netlify-honeypot="bot-field">
+```
+
+Netlify will automatically handle form submissions and email you!
+
+### **Testing Locally:**
+
+You need a local PHP server:
+```bash
+php -S localhost:8000
+```
+
+Then open: `http://localhost:8000`
 
 ## 🎨 Color Scheme
 
