@@ -6,6 +6,7 @@ import GallerySection from '../components/GallerySection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import InstagramBubble from '../components/InstagramBubble';
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
+      <InstagramBubble />
     </div>
   );
 };
