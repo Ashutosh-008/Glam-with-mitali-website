@@ -5,14 +5,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#2C2C2C] text-white py-12">
+    <footer className="bg-[#0F0F0F] text-white py-12">
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
           {/* Brand Section */}
           <div>
             <h3
-              className="text-2xl font-bold mb-4 text-[#C9B299]"
+              className="text-2xl font-bold mb-4 text-[#D4AF37]"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Blush with Mitali
@@ -24,14 +24,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#C9B299]">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <button
                   onClick={() => {
                     document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-white/70 hover:text-[#C9B299] transition-colors duration-300"
+                  className="text-white/70 hover:text-[#D4AF37] transition-colors duration-300"
                 >
                   Home
                 </button>
@@ -41,7 +41,7 @@ const Footer = () => {
                   onClick={() => {
                     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-white/70 hover:text-[#C9B299] transition-colors duration-300"
+                  className="text-white/70 hover:text-[#D4AF37] transition-colors duration-300"
                 >
                   Services
                 </button>
@@ -51,7 +51,7 @@ const Footer = () => {
                   onClick={() => {
                     document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-white/70 hover:text-[#C9B299] transition-colors duration-300"
+                  className="text-white/70 hover:text-[#D4AF37] transition-colors duration-300"
                 >
                   Gallery
                 </button>
@@ -61,7 +61,7 @@ const Footer = () => {
                   onClick={() => {
                     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-white/70 hover:text-[#C9B299] transition-colors duration-300"
+                  className="text-white/70 hover:text-[#D4AF37] transition-colors duration-300"
                 >
                   Contact
                 </button>
@@ -71,11 +71,11 @@ const Footer = () => {
 
           {/* Connect Section */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#C9B299]">Connect With Us</h4>
+            <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">Connect With Us</h4>
             <div className="space-y-4">
               <a
                 href="mailto:contact@blushwithmitali.com"
-                className="flex items-center gap-3 text-white/70 hover:text-[#C9B299] transition-colors duration-300"
+                className="flex items-center gap-3 text-white/70 hover:text-[#D4AF37] transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
                 <span>contact@blushwithmitali.com</span>
@@ -84,7 +84,7 @@ const Footer = () => {
                 href="https://instagram.com/blush_with_mitali"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-white/70 hover:text-[#C9B299] transition-colors duration-300"
+                className="flex items-center gap-3 text-white/70 hover:text-[#E8B4BC] transition-colors duration-300"
               >
                 <Instagram className="w-5 h-5" />
                 <span>@blush_with_mitali</span>
@@ -105,7 +105,7 @@ const Footer = () => {
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Book your special day with us and make it unforgettable
-              <Heart className="w-4 h-4 text-[#C9B299] fill-[#C9B299]" />
+              <Heart className="w-4 h-4 text-[#E8B4BC] fill-[#E8B4BC]" />
             </p>
           </div>
         </div>

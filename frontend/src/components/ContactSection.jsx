@@ -57,17 +57,17 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#FAF7F2]">
+    <section id="contact" className="py-20 bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4"
+            className="text-4xl md:text-5xl font-bold text-[#1B2845] mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Book Your Date
           </h2>
-          <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
+          <p className="text-lg text-[#1B2845]/70 max-w-2xl mx-auto">
             Ready to look stunning on your special day? Get in touch with us today!
           </p>
         </div>
@@ -75,10 +75,10 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
-            <Card className="border-2 border-[#E5E5E5]">
+            <Card className="border-2 border-[#E8B4BC]/30 hover:border-[#D4AF37] transition-all duration-300 hover:shadow-xl">
               <CardHeader>
                 <CardTitle
-                  className="text-2xl text-[#2C2C2C]"
+                  className="text-2xl text-[#1B2845]"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
                   Get in Touch
@@ -87,15 +87,15 @@ const ContactSection = () => {
               <CardContent className="space-y-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#8B7355]/10 p-3 rounded-full">
-                    <Mail className="w-6 h-6 text-[#8B7355]" />
+                  <div className="bg-[#D4AF37]/20 p-3 rounded-full">
+                    <Mail className="w-6 h-6 text-[#D4AF37]" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#2C2C2C] mb-1">Email Us</h3>
+                    <h3 className="font-semibold text-[#1B2845] mb-1">Email Us</h3>
                     <Button
                       onClick={handleEmailClick}
                       variant="link"
-                      className="text-[#8B7355] hover:text-[#6B5943] p-0 h-auto"
+                      className="text-[#D4AF37] hover:text-[#B8941F] p-0 h-auto"
                     >
                       contact@blushwithmitali.com
                     </Button>
@@ -104,16 +104,16 @@ const ContactSection = () => {
 
                 {/* Instagram */}
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#8B7355]/10 p-3 rounded-full">
-                    <Instagram className="w-6 h-6 text-[#8B7355]" />
+                  <div className="bg-[#E8B4BC]/20 p-3 rounded-full">
+                    <Instagram className="w-6 h-6 text-[#E8B4BC]" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#2C2C2C] mb-1">Follow Us</h3>
+                    <h3 className="font-semibold text-[#1B2845] mb-1">Follow Us</h3>
                     <a
                       href="https://instagram.com/blush_with_mitali"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#8B7355] hover:text-[#6B5943] hover:underline"
+                      className="text-[#E8B4BC] hover:text-[#D4A5A5] hover:underline transition-colors duration-300"
                     >
                       @blush_with_mitali
                     </a>
@@ -122,32 +122,32 @@ const ContactSection = () => {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#8B7355]/10 p-3 rounded-full">
-                    <MapPin className="w-6 h-6 text-[#8B7355]" />
+                  <div className="bg-[#1B2845]/10 p-3 rounded-full">
+                    <MapPin className="w-6 h-6 text-[#1B2845]" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#2C2C2C] mb-1">Service Area</h3>
-                    <p className="text-[#6B6B6B]">Available for bookings across India</p>
+                    <h3 className="font-semibold text-[#1B2845] mb-1">Service Area</h3>
+                    <p className="text-[#1B2845]/70">Available for bookings across India</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Direct Email CTA */}
-            <Card className="bg-[#8B7355] text-white border-none">
+            <Card className="bg-gradient-to-br from-[#1B2845] to-[#0F1F3A] text-white border-none shadow-xl">
               <CardContent className="p-8 text-center">
                 <h3
-                  className="text-2xl font-bold mb-4"
+                  className="text-2xl font-bold mb-4 text-[#D4AF37]"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
                   Prefer Email?
                 </h3>
-                <p className="mb-6 opacity-90">
+                <p className="mb-6 text-white/90">
                   Click below to send us an inquiry directly via your email client
                 </p>
                 <Button
                   onClick={handleEmailClick}
-                  className="bg-white text-[#8B7355] hover:bg-[#FAF7F2] transition-colors duration-300"
+                  className="bg-[#D4AF37] hover:bg-[#B8941F] text-[#1B2845] font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Inquire via Email
                 </Button>
@@ -156,10 +156,10 @@ const ContactSection = () => {
           </div>
 
           {/* Booking Form */}
-          <Card className="border-2 border-[#E5E5E5]">
+          <Card className="border-2 border-[#E8B4BC]/30 hover:border-[#D4AF37] transition-all duration-300 shadow-lg">
             <CardHeader>
               <CardTitle
-                className="text-2xl text-[#2C2C2C]"
+                className="text-2xl text-[#1B2845]"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 Book an Appointment
@@ -169,7 +169,7 @@ const ContactSection = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name */}
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-[#2C2C2C]">Full Name *</Label>
+                  <Label htmlFor="name" className="text-[#1B2845] font-medium">Full Name *</Label>
                   <Input
                     id="name"
                     name="name"
@@ -177,13 +177,13 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="Enter your name"
-                    className="border-[#E5E5E5] focus:border-[#8B7355]"
+                    className="border-[#E8B4BC]/50 focus:border-[#D4AF37] focus:ring-[#D4AF37]"
                   />
                 </div>
 
                 {/* Email */}
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-[#2C2C2C]">Email Address *</Label>
+                  <Label htmlFor="email" className="text-[#1B2845] font-medium">Email Address *</Label>
                   <Input
                     id="email"
                     name="email"
@@ -192,13 +192,13 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="your.email@example.com"
-                    className="border-[#E5E5E5] focus:border-[#8B7355]"
+                    className="border-[#E8B4BC]/50 focus:border-[#D4AF37] focus:ring-[#D4AF37]"
                   />
                 </div>
 
                 {/* Event Date */}
                 <div className="space-y-2">
-                  <Label htmlFor="eventDate" className="text-[#2C2C2C]">Event Date *</Label>
+                  <Label htmlFor="eventDate" className="text-[#1B2845] font-medium">Event Date *</Label>
                   <Input
                     id="eventDate"
                     name="eventDate"
@@ -206,15 +206,15 @@ const ContactSection = () => {
                     value={formData.eventDate}
                     onChange={handleChange}
                     required
-                    className="border-[#E5E5E5] focus:border-[#8B7355]"
+                    className="border-[#E8B4BC]/50 focus:border-[#D4AF37] focus:ring-[#D4AF37]"
                   />
                 </div>
 
                 {/* Service Required */}
                 <div className="space-y-2">
-                  <Label htmlFor="serviceRequired" className="text-[#2C2C2C]">Service Required *</Label>
+                  <Label htmlFor="serviceRequired" className="text-[#1B2845] font-medium">Service Required *</Label>
                   <Select onValueChange={handleServiceChange} value={formData.serviceRequired}>
-                    <SelectTrigger className="border-[#E5E5E5] focus:border-[#8B7355]">
+                    <SelectTrigger className="border-[#E8B4BC]/50 focus:border-[#D4AF37] focus:ring-[#D4AF37]">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
@@ -229,7 +229,7 @@ const ContactSection = () => {
 
                 {/* Message */}
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-[#2C2C2C]">Message</Label>
+                  <Label htmlFor="message" className="text-[#1B2845] font-medium">Message</Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -237,14 +237,14 @@ const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="Tell us about your event and any specific requirements..."
                     rows={4}
-                    className="border-[#E5E5E5] focus:border-[#8B7355]"
+                    className="border-[#E8B4BC]/50 focus:border-[#D4AF37] focus:ring-[#D4AF37]"
                   />
                 </div>
 
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full bg-[#8B7355] hover:bg-[#6B5943] text-white py-6 text-lg transition-colors duration-300"
+                  className="w-full bg-[#D4AF37] hover:bg-[#B8941F] text-[#1B2845] font-semibold py-6 text-lg transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Send Inquiry
                 </Button>

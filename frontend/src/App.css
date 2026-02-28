@@ -13,16 +13,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FAF7F2;
+  background: #FFF8F0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8B7355;
+  background: #D4AF37;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B5943;
+  background: #B8941F;
 }
 
 /* Google Fonts Import */

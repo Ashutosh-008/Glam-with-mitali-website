@@ -35,17 +35,21 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="testimonials" className="py-20 bg-[#1B2845] relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-10 right-10 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#E8B4BC]/10 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4"
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Kind Words from Our Clients
           </h2>
-          <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Hear from the beautiful brides and clients we've had the pleasure to work with
           </p>
         </div>
@@ -55,30 +59,30 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.id}
-              className="border-2 border-[#E5E5E5] hover:border-[#8B7355] transition-all duration-300 hover:shadow-lg"
+              className="border-2 border-[#D4AF37]/30 bg-white/95 backdrop-blur-sm hover:border-[#D4AF37] hover:bg-white transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
             >
               <CardContent className="p-8">
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#8B7355] text-[#8B7355]" />
+                    <Star key={i} className="w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" />
                   ))}
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-[#5A5A5A] italic mb-6 leading-relaxed">
+                <p className="text-[#1B2845]/80 italic mb-6 leading-relaxed">
                   "{testimonial.text}"
                 </p>
 
                 {/* Author Info */}
-                <div className="border-t border-[#E5E5E5] pt-4">
+                <div className="border-t border-[#E8B4BC]/30 pt-4">
                   <p
-                    className="font-semibold text-[#2C2C2C] text-lg"
+                    className="font-semibold text-[#1B2845] text-lg"
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
                     {testimonial.name}
                   </p>
-                  <p className="text-[#8B7355] text-sm">{testimonial.event} Client</p>
+                  <p className="text-[#D4AF37] text-sm font-medium">{testimonial.event} Client</p>
                 </div>
               </CardContent>
             </Card>
