@@ -74,11 +74,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">Connect With Us</h4>
             <div className="space-y-4">
               <a
-                href="mailto:contact@blushwithmitali.com"
+                href="mailto:mitaliverma8853@gmail.com"
                 className="flex items-center gap-3 text-white/70 hover:text-[#D4AF37] transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
-                <span>contact@blushwithmitali.com</span>
+                <span>mitaliverma8853@gmail.com</span>
               </a>
               <a
                 href="https://instagram.com/blush_with_mitali"
