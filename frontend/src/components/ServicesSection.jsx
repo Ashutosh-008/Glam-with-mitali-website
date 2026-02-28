@@ -125,12 +125,12 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4"
+            className="text-4xl md:text-5xl font-bold text-[#1B2845] mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Our Services
           </h2>
-          <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
+          <p className="text-lg text-[#1B2845]/70 max-w-2xl mx-auto">
             Tailored makeup packages for every special occasion in your life
           </p>
         </div>
@@ -144,7 +144,7 @@ const ServicesSection = () => {
                 <TabsTrigger
                   key={service.id}
                   value={service.id}
-                  className="data-[state=active]:bg-[#8B7355] data-[state=active]:text-white bg-[#FAF7F2] text-[#2C2C2C] px-6 py-3 rounded-md transition-all duration-300 hover:bg-[#8B7355]/20"
+                  className="data-[state=active]:bg-[#1B2845] data-[state=active]:text-[#D4AF37] bg-[#FFF8F0] text-[#1B2845] border-2 border-[#1B2845]/10 data-[state=active]:border-[#D4AF37] px-6 py-3 rounded-md transition-all duration-300 hover:border-[#D4AF37] hover:bg-[#1B2845]/5"
                 >
                   <Icon className="w-4 h-4 mr-2" />
                   {service.title}
@@ -159,33 +159,33 @@ const ServicesSection = () => {
                 {service.packages.map((pkg, index) => (
                   <Card
                     key={index}
-                    className={`relative overflow-hidden border-2 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${
+                    className={`relative overflow-hidden border-2 transition-all duration-300 hover:shadow-2xl hover:scale-[1.03] ${
                       pkg.popular
-                        ? 'border-[#8B7355] shadow-md'
-                        : 'border-[#E5E5E5] hover:border-[#8B7355]'
+                        ? 'border-[#D4AF37] shadow-lg bg-gradient-to-br from-white to-[#FFF8F0]'
+                        : 'border-[#1B2845]/20 hover:border-[#D4AF37]'
                     }`}
                   >
                     {pkg.popular && (
-                      <div className="absolute top-4 right-4">
-                        <Badge className="bg-[#8B7355] text-white hover:bg-[#6B5943]">Most Popular</Badge>
+                      <div className="absolute top-0 right-0 bg-[#D4AF37] text-[#1B2845] px-4 py-1 text-sm font-semibold rounded-bl-lg">
+                        Most Popular
                       </div>
                     )}
-                    <CardHeader>
+                    <CardHeader className="pb-4">
                       <CardTitle
-                        className="text-2xl text-[#2C2C2C]"
+                        className="text-2xl text-[#1B2845]"
                         style={{ fontFamily: "'Playfair Display', serif" }}
                       >
                         {pkg.name}
                       </CardTitle>
-                      <CardDescription className="text-3xl font-bold text-[#8B7355] mt-2">
+                      <CardDescription className="text-3xl font-bold text-[#D4AF37] mt-2">
                         {pkg.price}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-3">
                         {pkg.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start text-[#5A5A5A]">
-                            <span className="text-[#8B7355] mr-2">✓</span>
+                          <li key={idx} className="flex items-start text-[#1B2845]/80">
+                            <span className="text-[#D4AF37] mr-2 font-bold">✓</span>
                             <span>{feature}</span>
                           </li>
                         ))}
@@ -200,7 +200,7 @@ const ServicesSection = () => {
 
         {/* Additional Info */}
         <div className="mt-16 text-center">
-          <p className="text-[#6B6B6B] italic">
+          <p className="text-[#1B2845]/70 italic">
             All packages can be customized to your specific needs. Contact us for detailed pricing and availability.
           </p>
         </div>
