@@ -60,6 +60,36 @@ const GallerySection = () => {
       url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/xds63e86_IMG_20251219_135349_132.webp',
       alt: 'Traditional Maharashtrian Look',
       category: 'Traditional'
+    },
+    {
+      id: 10,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/jxn02rau_IMG-20251130-WA0034.jpg.jpeg',
+      alt: 'Glamorous Bridal Makeup',
+      category: 'Bridal'
+    },
+    {
+      id: 11,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/swr07k5h_DSC00084.JPG.jpeg',
+      alt: 'Elegant Reception Look',
+      category: 'Reception'
+    },
+    {
+      id: 12,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/6067ffbw_IMG-20251006-WA0014.jpg.jpeg',
+      alt: 'Beautiful Engagement Makeup',
+      category: 'Engagement'
+    },
+    {
+      id: 13,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/3kdzjyfn_DSC00106.JPG%20%281%29.jpeg',
+      alt: 'Radiant Bridal Glow',
+      category: 'Bridal'
+    },
+    {
+      id: 14,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/oz5twsvv_IMG_20260203_121759.jpg.jpeg',
+      alt: 'Sophisticated Party Glam',
+      category: 'Party'
     }
   ];
 
