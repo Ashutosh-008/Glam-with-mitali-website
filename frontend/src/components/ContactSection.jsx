@@ -7,6 +7,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Label } from './ui/label';
 import { Mail, Instagram, MapPin } from 'lucide-react';
 import { toast } from '../hooks/use-toast';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -16,26 +20,38 @@ const ContactSection = () => {
     serviceRequired: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Mock form submission
-    console.log('Form submitted:', formData);
-    
-    toast({
-      title: "Booking Inquiry Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    try {
+      const response = await axios.post(`${API}/bookings`, formData);
+      
+      toast({
+        title: "Booking Inquiry Sent!",
+        description: "We'll get back to you within 24 hours at mitaliverma8853@gmail.com",
+      });
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      eventDate: '',
-      serviceRequired: '',
-      message: ''
-    });
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        eventDate: '',
+        serviceRequired: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "Please try again or email us directly at mitaliverma8853@gmail.com",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -53,7 +69,7 @@ const ContactSection = () => {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:contact@blushwithmitali.com?subject=Booking Inquiry';
+    window.location.href = 'mailto:mitaliverma8853@gmail.com?subject=Booking Inquiry';
   };
 
   return (
@@ -97,7 +113,7 @@ const ContactSection = () => {
                       variant="link"
                       className="text-[#D4AF37] hover:text-[#B8941F] p-0 h-auto"
                     >
-                      contact@blushwithmitali.com
+                      mitaliverma8853@gmail.com
                     </Button>
                   </div>
                 </div>
@@ -213,7 +229,7 @@ const ContactSection = () => {
                 {/* Service Required */}
                 <div className="space-y-2">
                   <Label htmlFor="serviceRequired" className="text-[#1B2845] font-medium">Service Required *</Label>
-                  <Select onValueChange={handleServiceChange} value={formData.serviceRequired}>
+                  <Select onValueChange={handleServiceChange} value={formData.serviceRequired} required>
                     <SelectTrigger className="border-[#E8B4BC]/50 focus:border-[#D4AF37] focus:ring-[#D4AF37]">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
@@ -244,9 +260,10 @@ const ContactSection = () => {
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full bg-[#D4AF37] hover:bg-[#B8941F] text-[#1B2845] font-semibold py-6 text-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#D4AF37] hover:bg-[#B8941F] text-[#1B2845] font-semibold py-6 text-lg transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50"
                 >
-                  Send Inquiry
+                  {isSubmitting ? 'Sending...' : 'Send Inquiry'}
                 </Button>
               </form>
             </CardContent>

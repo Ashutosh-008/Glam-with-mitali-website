@@ -36,6 +36,30 @@ const GallerySection = () => {
       url: 'https://customer-assets.emergentagent.com/job_cf1db12c-e582-4d22-8a55-97938f81ec5b/artifacts/toi9xqgk_DSC07107.JPG.jpeg',
       alt: 'Traditional Bridal Makeup',
       category: 'Bridal'
+    },
+    {
+      id: 6,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/ljs9sjih_IMG_20251212_134711.jpg.jpeg',
+      alt: 'Elegant Party Look',
+      category: 'Party'
+    },
+    {
+      id: 7,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/8kr6ni6t_IMG_20251212_133335.jpg.jpeg',
+      alt: 'Vibrant Mehendi Makeup',
+      category: 'Mehendi'
+    },
+    {
+      id: 8,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/os79z8gs_DSC07108.JPG.jpeg',
+      alt: 'Stunning Bridal Portrait',
+      category: 'Bridal'
+    },
+    {
+      id: 9,
+      url: 'https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/xds63e86_IMG_20251219_135349_132.webp',
+      alt: 'Traditional Maharashtrian Look',
+      category: 'Traditional'
     }
   ];
 
