@@ -67,18 +67,18 @@ const AdminPage = () => {
   }
 
   return (
-    <div className=\"min-h-screen bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1] py-12 px-6\">
-      <div className=\"container mx-auto max-w-7xl\">
+    <div className="min-h-screen bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1] py-12 px-6">
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
-        <div className=\"mb-12 text-center\">
+        <div className="mb-12 text-center">
           <h1
-            className=\"text-5xl font-bold text-[#1B2845] mb-4\"
-            style={{ fontFamily: \"'Playfair Display', serif\" }}
+            className="text-5xl font-bold text-[#1B2845] mb-4"
+            style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Booking Inquiries
           </h1>
-          <p className=\"text-lg text-[#1B2845]/70\">
-            Total Bookings: <span className=\"font-bold text-[#D4AF37]\">{bookings.length}</span>
+          <p className="text-lg text-[#1B2845]/70">
+            Total Bookings: <span className="font-bold text-[#D4AF37]">{bookings.length}</span>
           </p>
         </div>
 
