@@ -480,7 +480,10 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <!-- Success/Error Messages -->
+                    <div id="form-message" class="form-message" style="display: none;"></div>
+                    
+                    <form class="contact-form" action="send-email.php" method="POST" id="contactForm">
                         <h3>Book an Appointment</h3>
                         
                         <div class="form-group">
@@ -502,11 +505,11 @@
                             <label for="service">Service Required *</label>
                             <select id="service" name="service" required>
                                 <option value="">Select a service</option>
-                                <option value="bridal">Bridal Makeup</option>
-                                <option value="engagement">Engagement Makeup</option>
-                                <option value="reception">Reception Makeup</option>
-                                <option value="haldi">Haldi/Mehendi</option>
-                                <option value="party">Party Makeup</option>
+                                <option value="Bridal Makeup">Bridal Makeup</option>
+                                <option value="Engagement Makeup">Engagement Makeup</option>
+                                <option value="Reception Makeup">Reception Makeup</option>
+                                <option value="Haldi/Mehendi">Haldi/Mehendi</option>
+                                <option value="Party Makeup">Party Makeup</option>
                             </select>
                         </div>
 
