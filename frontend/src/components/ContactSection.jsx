@@ -57,7 +57,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#FFF8F0]">
+    <section id="contact" className="py-20 bg-[#FAF7F2]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -67,7 +67,7 @@ const ContactSection = () => {
           >
             Book Your Date
           </h2>
-          <p className="text-lg text-[#2C2C2C]/70 max-w-2xl mx-auto">
+          <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
             Ready to look stunning on your special day? Get in touch with us today!
           </p>
         </div>
@@ -75,7 +75,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
-            <Card className="border-2 border-[#D4AF37]/20">
+            <Card className="border-2 border-[#E5E5E5]">
               <CardHeader>
                 <CardTitle
                   className="text-2xl text-[#2C2C2C]"
@@ -87,15 +87,15 @@ const ContactSection = () => {
               <CardContent className="space-y-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#D4AF37]/20 p-3 rounded-full">
-                    <Mail className="w-6 h-6 text-[#D4AF37]" />
+                  <div className="bg-[#8B7355]/10 p-3 rounded-full">
+                    <Mail className="w-6 h-6 text-[#8B7355]" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#2C2C2C] mb-1">Email Us</h3>
                     <Button
                       onClick={handleEmailClick}
                       variant="link"
-                      className="text-[#D4AF37] hover:text-[#B8941F] p-0 h-auto"
+                      className="text-[#8B7355] hover:text-[#6B5943] p-0 h-auto"
                     >
                       contact@blushwithmitali.com
                     </Button>
@@ -104,8 +104,8 @@ const ContactSection = () => {
 
                 {/* Instagram */}
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#D4AF37]/20 p-3 rounded-full">
-                    <Instagram className="w-6 h-6 text-[#D4AF37]" />
+                  <div className="bg-[#8B7355]/10 p-3 rounded-full">
+                    <Instagram className="w-6 h-6 text-[#8B7355]" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#2C2C2C] mb-1">Follow Us</h3>
@@ -113,7 +113,7 @@ const ContactSection = () => {
                       href="https://instagram.com/blush_with_mitali"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#D4AF37] hover:text-[#B8941F] hover:underline"
+                      className="text-[#8B7355] hover:text-[#6B5943] hover:underline"
                     >
                       @blush_with_mitali
                     </a>
@@ -122,19 +122,19 @@ const ContactSection = () => {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#D4AF37]/20 p-3 rounded-full">
-                    <MapPin className="w-6 h-6 text-[#D4AF37]" />
+                  <div className="bg-[#8B7355]/10 p-3 rounded-full">
+                    <MapPin className="w-6 h-6 text-[#8B7355]" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#2C2C2C] mb-1">Service Area</h3>
-                    <p className="text-[#2C2C2C]/70">Available for bookings across India</p>
+                    <p className="text-[#6B6B6B]">Available for bookings across India</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Direct Email CTA */}
-            <Card className="bg-gradient-to-br from-[#D4AF37] to-[#B8941F] text-white border-none">
+            <Card className="bg-[#8B7355] text-white border-none">
               <CardContent className="p-8 text-center">
                 <h3
                   className="text-2xl font-bold mb-4"
@@ -147,7 +147,7 @@ const ContactSection = () => {
                 </p>
                 <Button
                   onClick={handleEmailClick}
-                  className="bg-white text-[#D4AF37] hover:bg-[#FFF8F0] transition-colors duration-300"
+                  className="bg-white text-[#8B7355] hover:bg-[#FAF7F2] transition-colors duration-300"
                 >
                   Inquire via Email
                 </Button>
@@ -156,7 +156,7 @@ const ContactSection = () => {
           </div>
 
           {/* Booking Form */}
-          <Card className="border-2 border-[#2C2C2C]/10">
+          <Card className="border-2 border-[#E5E5E5]">
             <CardHeader>
               <CardTitle
                 className="text-2xl text-[#2C2C2C]"
@@ -177,7 +177,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="Enter your name"
-                    className="border-[#2C2C2C]/20 focus:border-[#D4AF37]"
+                    className="border-[#E5E5E5] focus:border-[#8B7355]"
                   />
                 </div>
 
@@ -192,7 +192,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="your.email@example.com"
-                    className="border-[#2C2C2C]/20 focus:border-[#D4AF37]"
+                    className="border-[#E5E5E5] focus:border-[#8B7355]"
                   />
                 </div>
 
@@ -206,7 +206,7 @@ const ContactSection = () => {
                     value={formData.eventDate}
                     onChange={handleChange}
                     required
-                    className="border-[#2C2C2C]/20 focus:border-[#D4AF37]"
+                    className="border-[#E5E5E5] focus:border-[#8B7355]"
                   />
                 </div>
 
@@ -214,7 +214,7 @@ const ContactSection = () => {
                 <div className="space-y-2">
                   <Label htmlFor="serviceRequired" className="text-[#2C2C2C]">Service Required *</Label>
                   <Select onValueChange={handleServiceChange} value={formData.serviceRequired}>
-                    <SelectTrigger className="border-[#2C2C2C]/20 focus:border-[#D4AF37]">
+                    <SelectTrigger className="border-[#E5E5E5] focus:border-[#8B7355]">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
@@ -237,14 +237,14 @@ const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="Tell us about your event and any specific requirements..."
                     rows={4}
-                    className="border-[#2C2C2C]/20 focus:border-[#D4AF37]"
+                    className="border-[#E5E5E5] focus:border-[#8B7355]"
                   />
                 </div>
 
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full bg-[#D4AF37] hover:bg-[#B8941F] text-white py-6 text-lg transition-colors duration-300"
+                  className="w-full bg-[#8B7355] hover:bg-[#6B5943] text-white py-6 text-lg transition-colors duration-300"
                 >
                   Send Inquiry
                 </Button>
