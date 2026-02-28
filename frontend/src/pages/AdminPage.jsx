@@ -60,8 +60,8 @@ const AdminPage = () => {
 
   if (loading) {
     return (
-      <div className=\"min-h-screen bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1] flex items-center justify-center\">
-        <div className=\"text-2xl text-[#1B2845]\">Loading bookings...</div>
+      <div className="min-h-screen bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1] flex items-center justify-center">
+        <div className="text-2xl text-[#1B2845]">Loading bookings...</div>
       </div>
     );
   }
