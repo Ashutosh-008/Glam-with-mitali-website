@@ -25,44 +25,54 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#FAF7F2]/95 backdrop-blur-md shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-[#1B2845]/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-serif" style={{ fontFamily: "'Playfair Display', serif" }}>
-            <span className="text-[#2C2C2C] font-semibold">Blush with Mitali</span>
+            <span className={`font-semibold transition-colors duration-300 ${
+              isScrolled ? 'text-[#D4AF37]' : 'text-[#1B2845]'
+            }`}>Blush with Mitali</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
-              className="text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Gallery
             </button>
             <button
               onClick={() => scrollToSection('testimonials')}
-              className="text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Testimonials
             </button>
             <Button
               onClick={() => scrollToSection('contact')}
-              className="bg-[#8B7355] hover:bg-[#6B5943] text-white transition-colors duration-300"
+              className="bg-[#D4AF37] hover:bg-[#B8941F] text-[#1B2845] font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Book Now
             </Button>
@@ -70,7 +80,9 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-[#2C2C2C]"
+            className={`md:hidden transition-colors duration-300 ${
+              isScrolled ? 'text-white' : 'text-[#1B2845]'
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -82,31 +94,39 @@ const Header = () => {
           <div className="md:hidden mt-4 pb-4 space-y-4">
             <button
               onClick={() => scrollToSection('home')}
-              className="block w-full text-left text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`block w-full text-left transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`block w-full text-left transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
-              className="block w-full text-left text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`block w-full text-left transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Gallery
             </button>
             <button
               onClick={() => scrollToSection('testimonials')}
-              className="block w-full text-left text-[#2C2C2C] hover:text-[#8B7355] transition-colors duration-300"
+              className={`block w-full text-left transition-colors duration-300 ${
+                isScrolled ? 'text-white hover:text-[#D4AF37]' : 'text-[#1B2845] hover:text-[#D4AF37]'
+              }`}
             >
               Testimonials
             </button>
             <Button
               onClick={() => scrollToSection('contact')}
-              className="w-full bg-[#8B7355] hover:bg-[#6B5943] text-white transition-colors duration-300"
+              className="w-full bg-[#D4AF37] hover:bg-[#B8941F] text-[#1B2845] font-semibold transition-colors duration-300"
             >
               Book Now
             </Button>
