@@ -68,41 +68,17 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Form submission handler
+// Form submission handler for Netlify
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
-    // Check for success/error messages in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const status = urlParams.get('status');
-    const messageDiv = document.getElementById('form-message');
-    
-    if (status === 'success') {
-        messageDiv.textContent = '✓ Thank you! Your booking inquiry has been sent successfully. We will contact you at mitaliverma8853@gmail.com soon!';
-        messageDiv.className = 'form-message success';
-        messageDiv.style.display = 'block';
-        
-        // Scroll to message
-        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        
-        // Clear URL parameters
-        window.history.replaceState({}, document.title, window.location.pathname);
-    } else if (status === 'error') {
-        messageDiv.textContent = '✗ Sorry, there was an error sending your message. Please try emailing us directly at mitaliverma8853@gmail.com';
-        messageDiv.className = 'form-message error';
-        messageDiv.style.display = 'block';
-        
-        // Scroll to message
-        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        
-        // Clear URL parameters
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }
-    
     contactForm.addEventListener('submit', function(e) {
         const submitBtn = this.querySelector('.btn-submit');
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
+        
+        // Netlify will handle the actual submission
+        // Form will refresh to a thank you page automatically
     });
 }
 
