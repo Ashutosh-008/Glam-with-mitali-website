@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-[#FFF8F0]">
+    <div className="min-h-screen bg-[#FAF7F2]">
       <Header />
       <HeroSection />
       <ServicesSection />
