@@ -60,53 +60,51 @@ const AdminPage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1] flex items-center justify-center">
-        <div className="text-2xl text-[#1B2845]">Loading bookings...</div>
+      <div className="min-h-screen bg-gradient-to-br from-cream via-pink to-beige flex items-center justify-center">
+        <div className="text-2xl text-navy">Loading bookings...</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FFF8F0] via-[#FFF0F5] to-[#FAF6F1] py-12 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-cream via-pink to-beige py-12 px-6">
       <div className="container mx-auto max-w-7xl">
-        {/* Header */}
         <div className="mb-12 text-center">
           <h1
-            className="text-5xl font-bold text-[#1B2845] mb-4"
+            className="text-5xl font-bold text-navy mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Booking Inquiries
           </h1>
-          <p className="text-lg text-[#1B2845]/70">
-            Total Bookings: <span className="font-bold text-[#D4AF37]">{bookings.length}</span>
+          <p className="text-lg text-navy-light">
+            Total Bookings: <span className="font-bold text-gold">{bookings.length}</span>
           </p>
         </div>
 
         {error && (
-          <div className=\"bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6\">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
             {error}
           </div>
         )}
 
-        {/* Bookings Grid */}
         {bookings.length === 0 ? (
-          <Card className=\"border-2 border-[#E8B4BC]/30 text-center py-12\">
+          <Card className="border-2 border-pink-light text-center py-12">
             <CardContent>
-              <p className=\"text-[#1B2845]/70 text-lg\">No bookings yet</p>
+              <p className="text-navy-light text-lg">No bookings yet</p>
             </CardContent>
           </Card>
         ) : (
-          <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {bookings.map((booking) => (
               <Card
                 key={booking.id}
-                className=\"border-2 border-[#E8B4BC]/30 hover:border-[#D4AF37] transition-all duration-300 hover:shadow-xl\"
+                className="border-2 border-pink-light hover:border-gold transition-all duration-300 hover:shadow-xl"
               >
                 <CardHeader>
-                  <div className=\"flex justify-between items-start mb-2\">
+                  <div className="flex justify-between items-start mb-2">
                     <CardTitle
-                      className=\"text-xl text-[#1B2845]\"
-                      style={{ fontFamily: \"'Playfair Display', serif\" }}
+                      className="text-xl text-navy"
+                      style={{ fontFamily: "'Playfair Display', serif" }}
                     >
                       {booking.name}
                     </CardTitle>
@@ -115,41 +113,36 @@ const AdminPage = () => {
                     </Badge>
                   </div>
                 </CardHeader>
-                <CardContent className=\"space-y-4\">
-                  {/* Email */}
-                  <div className=\"flex items-center gap-3 text-sm\">
-                    <Mail className=\"w-4 h-4 text-[#D4AF37]\" />
+                <CardContent className="space-y-4">
+                  <div className="flex items-center gap-3 text-sm">
+                    <Mail className="w-4 h-4 text-gold" />
                     <a
                       href={`mailto:${booking.email}`}
-                      className=\"text-[#1B2845]/80 hover:text-[#D4AF37] hover:underline\"
+                      className="text-navy-medium hover:text-gold hover:underline"
                     >
                       {booking.email}
                     </a>
                   </div>
 
-                  {/* Service */}
-                  <div className=\"flex items-center gap-3 text-sm\">
-                    <User className=\"w-4 h-4 text-[#E8B4BC]\" />
-                    <span className=\"text-[#1B2845]/80\">{getServiceName(booking.serviceRequired)}</span>
+                  <div className="flex items-center gap-3 text-sm">
+                    <User className="w-4 h-4 text-pink" />
+                    <span className="text-navy-medium">{getServiceName(booking.serviceRequired)}</span>
                   </div>
 
-                  {/* Event Date */}
-                  <div className=\"flex items-center gap-3 text-sm\">
-                    <Calendar className=\"w-4 h-4 text-[#1B2845]\" />
-                    <span className=\"text-[#1B2845]/80 font-medium\">{booking.eventDate}</span>
+                  <div className="flex items-center gap-3 text-sm">
+                    <Calendar className="w-4 h-4 text-navy" />
+                    <span className="text-navy-medium font-medium">{booking.eventDate}</span>
                   </div>
 
-                  {/* Message */}
                   {booking.message && (
-                    <div className=\"flex items-start gap-3 text-sm\">
-                      <MessageSquare className=\"w-4 h-4 text-[#D4AF37] mt-1\" />
-                      <p className=\"text-[#1B2845]/70 italic line-clamp-3\">{booking.message}</p>
+                    <div className="flex items-start gap-3 text-sm">
+                      <MessageSquare className="w-4 h-4 text-gold mt-1" />
+                      <p className="text-navy-light italic line-clamp-3">{booking.message}</p>
                     </div>
                   )}
 
-                  {/* Created At */}
-                  <div className=\"flex items-center gap-3 text-xs text-[#1B2845]/50 pt-2 border-t border-[#E8B4BC]/20\">
-                    <Clock className=\"w-3 h-3\" />
+                  <div className="flex items-center gap-3 text-xs text-navy-lightest pt-2 border-t border-pink-lightest">
+                    <Clock className="w-3 h-3" />
                     <span>Received: {formatDate(booking.createdAt)}</span>
                   </div>
                 </CardContent>
