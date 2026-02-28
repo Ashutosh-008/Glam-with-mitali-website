@@ -72,18 +72,37 @@ window.addEventListener('scroll', () => {
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
+    // Check for success/error messages in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    const messageDiv = document.getElementById('form-message');
+    
+    if (status === 'success') {
+        messageDiv.textContent = '✓ Thank you! Your booking inquiry has been sent successfully. We will contact you at mitaliverma8853@gmail.com soon!';
+        messageDiv.className = 'form-message success';
+        messageDiv.style.display = 'block';
+        
+        // Scroll to message
+        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Clear URL parameters
+        window.history.replaceState({}, document.title, window.location.pathname);
+    } else if (status === 'error') {
+        messageDiv.textContent = '✗ Sorry, there was an error sending your message. Please try emailing us directly at mitaliverma8853@gmail.com';
+        messageDiv.className = 'form-message error';
+        messageDiv.style.display = 'block';
+        
+        // Scroll to message
+        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Clear URL parameters
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+    
     contactForm.addEventListener('submit', function(e) {
-        // If using Formspree, the form will submit automatically
-        // If you want to add custom validation or messages, do it here
         const submitBtn = this.querySelector('.btn-submit');
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-
-        // Re-enable button after 3 seconds (in case of errors)
-        setTimeout(() => {
-            submitBtn.textContent = 'Send Inquiry';
-            submitBtn.disabled = false;
-        }, 3000);
     });
 }
 
