@@ -1,0 +1,28 @@
+=====================================
+EMAIL PREVIEW
+=====================================
+
+TO: mitaliverma8853@gmail.com
+FROM: [Client Name] <client@example.com>
+SUBJECT: New Booking Inquiry from [Client Name]
+
+-------------------------------------
+
+You have received a new booking inquiry from your website.
+
+Here are the details:
+
+Name: Priya Sharma
+Email: priya.sharma@example.com
+Event Date: 2025-08-15
+Service Required: Bridal Makeup
+Message:
+Hi Mitali! I'm getting married on August 15th and would love to book your Royal Luxe bridal package. I saw your work on Instagram and I'm impressed! Can we schedule a trial?
+
+-------------------------------------
+
+You can reply directly to this email to contact the client.
+
+=====================================
+
+Note: The actual email will be formatted as plain text and sent directly to your inbox whenever someone fills the contact form on your website.
