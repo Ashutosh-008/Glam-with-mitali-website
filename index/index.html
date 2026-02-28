@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitali Verma - Professional Makeup Artist | Blush with Mitali</title>
+    <meta name="description" content="Professional makeup artist specializing in bridal, engagement, reception, and party makeup. Book your special day with Mitali Verma.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">Blush with Mitali</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link btn-primary">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <div class="sparkle-icon">✨</div>
+            <h1 class="hero-title">Mitali Verma</h1>
+            <p class="hero-subtitle">Professional Makeup Artist</p>
+            <p class="hero-description">
+                Specializing in bridal artistry, I believe every bride deserves to feel radiant and confident on her special day. 
+                With a passion for enhancing natural beauty and creating timeless looks, I work closely with each client to bring 
+                their vision to life—whether it's soft and romantic, bold and glamorous, or anything in between.
+            </p>
+            <p class="hero-tagline">
+                From the first brushstroke to the final touch, my goal is to make you look and feel like the most beautiful version of yourself.
+            </p>
+            <a href="#contact" class="btn-cta">Book Your Date</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Tailored makeup packages for every special occasion in your life</p>
+
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="bridal">👑 Bridal Makeup</button>
+                    <button class="tab-btn" data-tab="engagement">💕 Engagement Makeup</button>
+                    <button class="tab-btn" data-tab="reception">✨ Reception Makeup</button>
+                    <button class="tab-btn" data-tab="haldi">🌸 Haldi/Mehendi</button>
+                    <button class="tab-btn" data-tab="party">🎉 Party Makeup</button>
+                </div>
+
+                <!-- Bridal Tab -->
+                <div class="tab-content active" id="bridal">
+                    <div class="service-cards">
+                        <div class="service-card">
+                            <h3>Classic</h3>
+                            <p class="price">₹</p>
+                            <ul>
+                                <li>✓ HD base</li>
+                                <li>✓ Natural glow</li>
+                                <li>✓ Subtle eyes</li>
+                                <li>✓ Basic hairstyle</li>
+                            </ul>
+                        </div>
+                        <div class="service-card popular">
+                            <span class="badge">Most Popular</span>
+                            <h3>HD Glam</h3>
+                            <p class="price">₹₹</p>
+                            <ul>
+                                <li>✓ HD flawless finish</li>
+                                <li>✓ Defined eyes</li>
+                                <li>✓ Advanced styling</li>
+                                <li>✓ Accessories setup</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>Royal Luxe</h3>
+                            <p class="price">₹₹₹</p>
+                            <ul>
+                                <li>✓ Ultra HD finish</li>
+                                <li>✓ Detailed eye art</li>
+                                <li>✓ Advanced hair</li>
+                                <li>✓ Touch-up kit</li>
+                                <li>✓ Premium products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engagement Tab -->
+                <div class="tab-content" id="engagement">
+                    <div class="service-cards">
+                        <div class="service-card">
+                            <h3>Soft Glam</h3>
+                            <p class="price">₹</p>
+                            <ul>
+                                <li>✓ Natural finish</li>
+                                <li>✓ Soft eyes</li>
+                                <li>✓ Simple hairstyle</li>
+                                <li>✓ Light draping</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>HD Glam</h3>
+                            <p class="price">₹₹</p>
+                            <ul>
+                                <li>✓ HD finish</li>
+                                <li>✓ Enhanced eyes</li>
+                                <li>✓ Styled hair</li>
+                                <li>✓ Advanced draping</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>Ultra HD Luxe</h3>
+                            <p class="price">₹₹₹</p>
+                            <ul>
+                                <li>✓ Ultra HD base</li>
+                                <li>✓ Detailed makeup</li>
+                                <li>✓ Luxe hairstyle</li>
+                                <li>✓ Premium finish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reception Tab -->
+                <div class="tab-content" id="reception">
+                    <div class="service-cards">
+                        <div class="service-card">
+                            <h3>Elegant Glam</h3>
+                            <p class="price">₹</p>
+                            <ul>
+                                <li>✓ Radiant finish</li>
+                                <li>✓ Elegant eyes</li>
+                                <li>✓ Chic hairstyle</li>
+                                <li>✓ Long-lasting</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>HD Glam</h3>
+                            <p class="price">₹₹</p>
+                            <ul>
+                                <li>✓ HD perfection</li>
+                                <li>✓ Statement eyes</li>
+                                <li>✓ Sophisticated hair</li>
+                                <li>✓ Premium draping</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>Ultra HD Royal</h3>
+                            <p class="price">₹₹₹</p>
+                            <ul>
+                                <li>✓ Ultra luxe finish</li>
+                                <li>✓ Glamorous eyes</li>
+                                <li>✓ Designer hair</li>
+                                <li>✓ Complete package</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Haldi Tab -->
+                <div class="tab-content" id="haldi">
+                    <div class="service-cards">
+                        <div class="service-card">
+                            <h3>Fresh Glam</h3>
+                            <p class="price">₹</p>
+                            <ul>
+                                <li>✓ Fresh look</li>
+                                <li>✓ Vibrant colors</li>
+                                <li>✓ Simple styling</li>
+                                <li>✓ Water-resistant</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>Vibrant Glam</h3>
+                            <p class="price">₹₹</p>
+                            <ul>
+                                <li>✓ Bold colors</li>
+                                <li>✓ Enhanced features</li>
+                                <li>✓ Styled look</li>
+                                <li>✓ Long-wear</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>Royal Glam</h3>
+                            <p class="price">₹₹₹</p>
+                            <ul>
+                                <li>✓ Premium finish</li>
+                                <li>✓ Detailed work</li>
+                                <li>✓ Designer styling</li>
+                                <li>✓ Complete package</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Party Tab -->
+                <div class="tab-content" id="party">
+                    <div class="service-cards">
+                        <div class="service-card">
+                            <h3>Basic</h3>
+                            <p class="price">₹</p>
+                            <ul>
+                                <li>✓ Natural look</li>
+                                <li>✓ Simple eyes</li>
+                                <li>✓ Quick styling</li>
+                                <li>✓ Touch-up tips</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>HD</h3>
+                            <p class="price">₹₹</p>
+                            <ul>
+                                <li>✓ HD finish</li>
+                                <li>✓ Glamorous eyes</li>
+                                <li>✓ Professional styling</li>
+                                <li>✓ Long-lasting</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <h3>Ultra HD Luxe</h3>
+                            <p class="price">₹₹₹</p>
+                            <ul>
+                                <li>✓ Ultra HD base</li>
+                                <li>✓ Statement look</li>
+                                <li>✓ Premium styling</li>
+                                <li>✓ Complete glam</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="services-note">All packages can be customized to your specific needs. Contact us for detailed pricing and availability.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <p class="section-subtitle">Browse through our stunning transformations and witness the artistry</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_cf1db12c-e582-4d22-8a55-97938f81ec5b/artifacts/gr7u4ftc_IMG_20260203_121732.jpg.jpeg" alt="Bridal Makeup - Royal Luxe">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Bridal Makeup - Royal Luxe</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_cf1db12c-e582-4d22-8a55-97938f81ec5b/artifacts/pzrfvo47_IMG-20250825-WA0049.jpg.jpeg" alt="Elegant Makeup Look">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Elegant Makeup Look</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_cf1db12c-e582-4d22-8a55-97938f81ec5b/artifacts/gij8enen_IMG_20260203_121826.jpg.jpeg" alt="Bridal Hair & Makeup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Bridal Hair & Makeup</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_cf1db12c-e582-4d22-8a55-97938f81ec5b/artifacts/7ax5smpn_DSC07102.JPG.jpeg" alt="Classic Bridal Look">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Classic Bridal Look</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_cf1db12c-e582-4d22-8a55-97938f81ec5b/artifacts/toi9xqgk_DSC07107.JPG.jpeg" alt="Traditional Bridal Makeup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Traditional Bridal Makeup</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/ljs9sjih_IMG_20251212_134711.jpg.jpeg" alt="Elegant Party Look">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Elegant Party Look</h4>
+                            <p>Party</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/8kr6ni6t_IMG_20251212_133335.jpg.jpeg" alt="Vibrant Mehendi Makeup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Vibrant Mehendi Makeup</h4>
+                            <p>Mehendi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/os79z8gs_DSC07108.JPG.jpeg" alt="Stunning Bridal Portrait">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Stunning Bridal Portrait</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/xds63e86_IMG_20251219_135349_132.webp" alt="Traditional Maharashtrian Look">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Traditional Maharashtrian Look</h4>
+                            <p>Traditional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/jxn02rau_IMG-20251130-WA0034.jpg.jpeg" alt="Glamorous Bridal Makeup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Glamorous Bridal Makeup</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/swr07k5h_DSC00084.JPG.jpeg" alt="Elegant Reception Look">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Elegant Reception Look</h4>
+                            <p>Reception</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/6067ffbw_IMG-20251006-WA0014.jpg.jpeg" alt="Beautiful Engagement Makeup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Beautiful Engagement Makeup</h4>
+                            <p>Engagement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/3kdzjyfn_DSC00106.JPG%20%281%29.jpeg" alt="Radiant Bridal Glow">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Radiant Bridal Glow</h4>
+                            <p>Bridal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_luxury-glam-mitali/artifacts/oz5twsvv_IMG_20260203_121759.jpg.jpeg" alt="Sophisticated Party Glam">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Sophisticated Party Glam</h4>
+                            <p>Party</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="gallery-cta">
+                Follow us on Instagram 
+                <a href="https://instagram.com/blush_with_mitali" target="_blank" rel="noopener noreferrer">@blush_with_mitali</a> 
+                for more stunning transformations
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Kind Words from Our Clients</h2>
+            <p class="section-subtitle">Hear from the beautiful brides and clients we've had the pleasure to work with</p>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Mitali gave me the exact 'Royal Luxe' look I had dreamed of for my wedding. The Ultra HD finish was flawless even after 10 hours of rituals, and her eye for detail is unmatched. Truly the best in the business!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Ananya R.</p>
+                        <p class="author-role">Bridal Client</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"I was nervous about looking 'overdone,' but Mitali's Soft Glam for my engagement was perfect. It felt like my skin but better. She is professional, calm, and incredibly talented."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Priya S.</p>
+                        <p class="author-role">Engagement Client</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Booked Mitali for a high-profile reception, and I've never received so many compliments. The advanced hairstyling stayed perfectly in place, and the makeup felt so lightweight."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Riya M.</p>
+                        <p class="author-role">Reception Client</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The Fresh Haldi Glam was exactly what I needed—vibrant yet natural. Mitali has a way of enhancing your features without masking them. A truly seamless experience from booking to the final look!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Srishti V.</p>
+                        <p class="author-role">Haldi/Mehendi Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Date</h2>
+            <p class="section-subtitle">Ready to look stunning on your special day? Get in touch with us today!</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <div>
+                                <h4>Email Us</h4>
+                                <a href="mailto:mitaliverma8853@gmail.com">mitaliverma8853@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <div>
+                                <h4>Follow Us</h4>
+                                <a href="https://instagram.com/blush_with_mitali" target="_blank" rel="noopener noreferrer">@blush_with_mitali</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>Service Area</h4>
+                                <p>Available for bookings across India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="email-cta-card">
+                        <h3>Prefer Email?</h3>
+                        <p>Click below to send us an inquiry directly via your email client</p>
+                        <a href="mailto:mitaliverma8853@gmail.com?subject=Booking Inquiry" class="btn-secondary">Inquire via Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <h3>Book an Appointment</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="eventDate">Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="bridal">Bridal Makeup</option>
+                                <option value="engagement">Engagement Makeup</option>
+                                <option value="reception">Reception Makeup</option>
+                                <option value="haldi">Haldi/Mehendi</option>
+                                <option value="party">Party Makeup</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your event and any specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Blush with Mitali</h3>
+                    <p>Creating timeless beauty and unforgettable transformations for your most special moments.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="mailto:mitaliverma8853@gmail.com">mitaliverma8853@gmail.com</a></li>
+                        <li><a href="https://instagram.com/blush_with_mitali" target="_blank" rel="noopener noreferrer">@blush_with_mitali</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Blush with Mitali. All rights reserved.</p>
+                <p class="footer-tagline">Book your special day with us and make it unforgettable ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Instagram Bubble -->
+    <a href="https://instagram.com/blush_with_mitali" target="_blank" rel="noopener noreferrer" class="instagram-bubble" aria-label="Follow us on Instagram">
+        <div class="bubble-inner">📱</div>
+        <span class="bubble-badge">!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
